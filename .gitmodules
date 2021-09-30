@@ -1,0 +1,6 @@
+[submodule "services/web/flask-project-template"]
+	path = services/web/flask-project-template
+	url = https://github.com/kashiwachen/flask-project-template.git
+[submodule "services/web/django-project-template"]
+	path = services/web/django-project-template
+	url = https://github.com/kashiwachen/django-project-template.git
