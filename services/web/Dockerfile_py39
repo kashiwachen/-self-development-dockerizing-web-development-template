@@ -1,0 +1,15 @@
+FROM python:3.9-slim
+
+# Set some environment variables.
+# PYTHONUNBUFFERED keeps Python from buffering our stdout
+# PYTHONPATH tells where to local python package
+ENV PYTHONUNBUFFERED 1
+ENV PYTHONPATH /app
+
+# WORKDIR /app/{service_name}
+WORKDIR /app/web
+ADD . .
+
+# Install deps
+RUN pip install --upgrade pip \
+    pip install --no-cache-dir -r requirements.txt
