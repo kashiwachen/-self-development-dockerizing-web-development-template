@@ -7,7 +7,7 @@ ENV PYTHONPATH /app
 
 # WORKDIR /app/{service_name}
 WORKDIR /app/web
-ADD . .
+COPY . .
 
 # Install deps
 RUN pip install --upgrade pip \
