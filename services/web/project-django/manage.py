@@ -7,9 +7,9 @@ import sys
 def main():
     """Run administrative tasks."""
     if sys.argv[1] == "startapp":
-        from templates import custom_startapp
+        from templates import startapp
 
-        custom_startapp.create_app(sys.argv[1:])
+        startapp.create_app(sys.argv[1:])
     else:
         os.environ.setdefault("DJANGO_SETTINGS_MODULE", "myapp.settings")
         try:
