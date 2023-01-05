@@ -72,4 +72,3 @@ def create_app(args):
     print(
         f"Add 'apps.{name.lower()}.apps.{name.title()}Config' in INSTALLED_APPS in settings.py"
     )
-
